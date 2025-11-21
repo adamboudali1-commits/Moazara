@@ -1,0 +1,79 @@
+/* Login.css */
+
+/* Animation d’apparition */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Appliquer l’animation au formulaire */
+.login-form {
+  animation: fadeInUp 0.6s ease forwards;
+  background-color: rgba(255, 255, 255, 0.8); /* fond blanc transparent 80% */
+  padding: 2rem;
+  border-radius: 1rem;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+/* Transitions sur les inputs */
+.login-form input,
+.login-form select {
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  border: 1.5px solid #ccc;
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.login-form input:focus,
+.login-form select:focus {
+  border-color: #4f46e5; /* violet doux */
+  box-shadow: 0 0 5px rgba(79, 70, 229, 0.5);
+  outline: none;
+}
+
+/* Transition sur le bouton */
+.login-form button {
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  background-color: #4f46e5; /* violet */
+  color: white;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.login-form button:hover:not(:disabled) {
+  background-color: #4338ca; /* violet plus foncé */
+  box-shadow: 0 4px 10px rgba(67, 56, 202, 0.6);
+}
+
+.login-form button:disabled {
+  background-color: #a5b4fc; /* violet clair désactivé */
+  cursor: not-allowed;
+}
+
+/* Conteneur avec style flex pour centrer */
+.login-background {
+  min-height: 100vh;
+  /* plus de background-image ici */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
