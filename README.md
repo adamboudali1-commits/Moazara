@@ -51,3 +51,53 @@ Elle permet :
 ```bash
 git clone https://github.com/username/moazara.git
 cd moazara
+Installer les dépendances frontend :
+
+cd client
+npm install
+
+
+Installer les dépendances backend :
+
+cd ../server
+npm install
+
+
+Configurer la base de données :
+
+Créez une base moazara et importez le fichier database.sql.
+
+Lancer l’application :
+
+# Backend
+cd server
+npm start
+
+# Frontend
+cd ../client
+npm start
+
+
+L’application sera accessible sur : http://localhost:3000
+
+📸 Captures d’écran
+
+
+Page d'accueil de Moazara
+
+
+Formulaire de demande en 5 étapes
+
+🤝 Contribution
+
+Les contributions sont les bienvenues !
+
+Fork le projet
+
+Crée une branche : git checkout -b feature/ma-fonctionnalité
+
+Commit tes modifications : git commit -m "Ajout d'une nouvelle fonctionnalité"
+
+Push sur la branche : git push origin feature/ma-fonctionnalité
+
+Ouvre un Pull Request
